@@ -2,7 +2,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
-  padding: 1rem 8.4375rem 4rem; /* top right/left bottom */
+  padding: 1rem 8.4375rem 4rem;
   font-family: 'Raleway', sans-serif;
   gap: 4rem;
   position: relative;
@@ -21,7 +21,7 @@
 }
 
 .logo {
-  font-size: 14.75rem; /* 236px */
+  font-size: 14.75rem;
   font-family: 'Jedira', serif;
   color: #BF7D8B;
   margin: 0;
@@ -34,20 +34,22 @@
   line-height: 1.6;
 }
 
-/* Artwork Layout Section */
+/* Art layout */
 .artLayout {
   position: relative;
   width: 100%;
   height: 620px;
-  margin-top: 3rem;
-  padding: 0 8.4375rem; /* match horizontal padding */
+  margin-top: 2rem;
+  padding: 0 8.4375rem;
 }
 
 .artLayout > div {
   position: absolute;
   width: 200px;
+  height: 208px;
 }
 
+/* Positioning the art items */
 .artItem1 {
   top: 0;
   left: 0;
@@ -55,25 +57,53 @@
 
 .artItem2 {
   top: 240px;
-  left: 240px;
+  left: 530px;
 }
 
 .artItem3 {
-  top: 160px;
+  top: 60px;
   right: 0;
 }
 
+/* Images with hover effect */
 .artLayout img {
-  width: 200px;
-  height: 208px; /* updated to match Figma */
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  filter: saturate(0); /* grayscale */
-  margin-bottom: 0.5rem;
+  filter: saturate(0);
+  display: block;
+  transition: transform 0.4s ease, filter 0.4s ease;
 }
 
+.artLayout div:hover img {
+  transform: scale(1.2);
+  filter: saturate(1);
+}
 
+/* Captions */
 .artLayout p {
+  position: absolute;
   font-size: 0.875rem;
   color: #444;
   line-height: 1.4;
+  width: 180px;
+}
+
+/* Caption positioning */
+.artItem1 p {
+  bottom: 0;
+  right: -200px;
+  text-align: left;
+}
+
+.artItem2 p {
+  bottom: 0;
+  left: -200px;
+  text-align: left;
+}
+
+.artItem3 p {
+  top: 0;
+  left: -200px;
+  text-align: left;
 }

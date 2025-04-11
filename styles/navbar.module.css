@@ -46,6 +46,12 @@
   width: 200px;
   height: 208px;
   object-fit: cover;
-  filter: saturate(0); /* removes color */
+  filter: saturate(0);
   margin-top: 0;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.navImage:hover {
+  transform: scale(1.2);
+  filter: saturate(1);
 }
