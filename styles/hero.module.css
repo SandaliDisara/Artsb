@@ -1,33 +1,33 @@
 .hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 4rem;
-    font-family: 'Raleway', sans-serif;
-  }
-  
-  .titleSection {
-    text-align: left;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1200px;
-    align-items: center;
-    gap: 3rem;
-  }
-  
-  .logo {
-    font-size: 20rem;
-    font-family: 'Jedira', serif;
-    color: #b57580;
-    margin: 0;
-  }
-  
-  .description {
-    max-width: 400px;
-    font-size: 1rem;
-    color: #444;
-    line-height: 1.6;
-  }
-  
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 0.1rem 8.4375rem 4rem; /* top right/left bottom; */
+  font-family: 'Raleway', sans-serif;
+  gap: 4rem;
+}
+
+.logoBlock {
+  width: 50%; /* or use fixed width if needed */
+  min-width: 500px; /* prevent logo from shrinking too much */
+}
+
+.textBlock {
+  width: 25rem; /* fixed width for description */
+  flex-shrink: 0; /* prevent it from squashing */
+  margin-left: auto;
+}
+
+.logo {
+  font-size: 14.75rem; /* 236px */
+  font-family: 'Jedira', serif;
+  color: #BF7D8B;
+  margin: 0;
+  line-height: 1;
+}
+
+.description {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
