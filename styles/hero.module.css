@@ -1,0 +1,33 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 4rem;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .titleSection {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    gap: 3rem;
+  }
+  
+  .logo {
+    font-size: 20rem;
+    font-family: 'Jedira', serif;
+    color: #b57580;
+    margin: 0;
+  }
+  
+  .description {
+    max-width: 400px;
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+  }
+  

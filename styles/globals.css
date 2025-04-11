@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
+
+/* Custom Font: Jedira */
+@font-face {
+  font-family: 'Jedira';
+  src: url('/fonts/Jedira-Regular.woff') format('woff'),
+       url('/fonts/Jedira-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #fff;
+  color: #111;
+  margin: 0;
+}
+
+/* Optional Utility Class */
+.logo {
+  font-family: 'Jedira', serif;
+}
