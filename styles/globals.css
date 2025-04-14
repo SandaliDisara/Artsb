@@ -9,6 +9,15 @@
   font-style: normal;
 }
 
+/* Custom Font: Ginger */
+@font-face {
+  font-family: 'Ginger';
+  src: url('/fonts/Ginger-Regular.woff2') format('woff2'),
+       url('/fonts/Ginger-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Global Styles */
 body {
   font-family: 'Raleway', sans-serif;
@@ -20,4 +29,9 @@ body {
 /* Optional Utility Class */
 .logo {
   font-family: 'Jedira', serif;
+}
+
+/* Ginger Title Utility (optional) */
+.title-ginger {
+  font-family: 'Ginger', serif;
 }
