@@ -1,5 +1,5 @@
 import Navbar from '@/components/Navbar';
-import HeroSection from '@/components/HeroSection';
+import HeroSection from '@/components/Herosection';
 import TexturedSection from '@/components/TexturedSection';
 import SelectedWork from '@/components/SelectedWork';
 import AboutArtist from '@/components/AboutArtist';
