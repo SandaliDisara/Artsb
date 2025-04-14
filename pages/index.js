@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import TexturedSection from '@/components/TexturedSection';
+import SelectedWork from '@/components/SelectedWork';
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <TexturedSection />
+      <SelectedWork />
 
     </>
   );
