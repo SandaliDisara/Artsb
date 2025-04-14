@@ -5,7 +5,10 @@ export default function SelectedWork() {
     <section className={styles.section}>
     <h2 className={styles.title}>SELECTED WORK</h2>
     <p className={styles.description}>
-    A curated collection of the artist’s most compelling pieces, reflecting their evolving style and vision. These works blend surreal imagery, natural elements, and emotional depth, each one inviting quiet reflection and connection through symbolism and storytelling.
+    A curated collection of the artist’s most compelling pieces,
+    reflecting their evolving style and vision. These works blend
+    surreal imagery, natural elements, and emotional depth, each one
+    inviting quiet reflection and connection through symbolism and storytelling.
     </p>
     <div className={styles.imageGrid}>
       <img src="/images/avatar.png" alt="Art 1" />
