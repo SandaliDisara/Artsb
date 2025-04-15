@@ -1,110 +1,95 @@
 .hero {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  padding: 1rem 8.4375rem 4rem;
-  font-family: 'Raleway', sans-serif;
-  gap: 4rem;
+  background-color: white;
+  padding: 3rem 0 8rem 0;
+  text-align: center;
+  overflow: hidden;
   position: relative;
-  flex-wrap: wrap;
 }
 
 .logoBlock {
-  width: 50%;
-  min-width: 500px;
-}
-
-.textBlock {
-  width: 25rem;
-  flex-shrink: 0;
-  margin-left: auto;
+  margin-bottom: 1rem;
 }
 
 .logo {
-  font-size: 14.75rem;
-  font-family: 'Jedira', serif;
+  font-family: 'Jedira', sans-serif;
   font-weight: 300;
-  color: #BF7D8B;
+  font-size: clamp(8rem, 18vw, 20rem); 
+  color: #b57580;
   margin: 0;
-  line-height: 1;
+  line-height: 1.1;
+}
+
+.textBlock {
+  margin-top: 2.5rem;
+  margin-bottom: 4rem;
 }
 
 .description {
-  font-size: 1rem;
-  color: #444;
-  line-height: 1.6;
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  color: #555;
+  line-height: 1.8;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
-/* Art layout */
-.artLayout {
-  position: relative;
+.scrollContainer {
+  overflow: hidden;
   width: 100%;
-  height: 620px;
-  margin-top: 2rem;
-  padding: 0 8.4375rem;
 }
 
-.artLayout > div {
-  position: absolute;
-  width: 200px;
-  height: 208px;
+.scrollTrack {
+  display: flex;
+  animation: scrollLeft 70s linear infinite;
+  width: max-content;
 }
 
-/* Positioning the art items */
-.artItem1 {
-  top: 0;
-  left: 0;
+.scrollContainer:hover .scrollTrack {
+  animation-play-state: paused;
 }
 
-.artItem2 {
-  top: 240px;
-  left: 530px;
+.imageSet {
+  display: flex;
 }
 
-.artItem3 {
-  top: 60px;
-  right: 0;
-}
-
-/* Images with hover effect */
-.artLayout img {
-  width: 100%;
-  height: 100%;
+.imageSet img {
+  width: 300px;
+  height: 300px;
   object-fit: cover;
-  filter: saturate(0);
-  display: block;
-  transition: transform 0.4s ease, filter 0.4s ease;
+  margin: 0 10px;
+  border-radius: 4px;
+  filter: grayscale(100%);
+  transition: filter 0.5s ease, transform 0.5s ease;
+  transform: scale(1);
 }
 
-.artLayout div:hover img {
-  transform: scale(1.2);
-  filter: saturate(1);
+.imageSet img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+  z-index: 2;
 }
 
-/* Captions */
-.artLayout p {
-  position: absolute;
-  font-size: 0.875rem;
-  color: #444;
-  line-height: 1.4;
-  width: 180px;
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
-/* Caption positioning */
-.artItem1 p {
-  bottom: 0;
-  right: -200px;
-  text-align: left;
+/* === Only Media Queries Needed for Image Resizing === */
+@media (max-width: 768px) {
+  .imageSet img {
+    width: 240px;
+    height: 240px;
+  }
 }
 
-.artItem2 p {
-  bottom: 0;
-  left: -200px;
-  text-align: left;
-}
-
-.artItem3 p {
-  top: 0;
-  left: -200px;
-  text-align: left;
+@media (max-width: 480px) {
+  .imageSet img {
+    width: 200px;
+    height: 200px;
+  }
 }

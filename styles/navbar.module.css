@@ -1,57 +1,92 @@
 .nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start; /* aligns frog image at the top */
-  padding: 0 8.4375rem; /* left-right: 135px, no top padding */
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.125rem;
+  background-color: white;
+  padding: 4rem 0 0 0;
   position: relative;
+  z-index: 10;
 }
 
-.navItems {
+/* Desktop nav visible by default */
+.desktopNav {
   display: flex;
-  list-style: none;
-  gap: 3rem;
-  padding: 6rem 0; /* add vertical spacing just for nav links */
-  margin: 0;
+  justify-content: center;
 }
 
-.nav li {
+/* Hide mobile nav by default */
+.mobileNav {
+  display: none;
+}
+
+/* Nav items (shared styles) */
+.navItems,
+.mobileMenu {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  color: #333;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+.mobileMenu {
+  flex-direction: column;
+  background-color: white;
+  padding: 1rem 0;
+  gap: 1.5rem;
+}
+
+.navItems li,
+.mobileMenu li {
   cursor: pointer;
-  color: #444;
   transition: color 0.3s ease;
 }
 
-.nav li:hover {
+.navItems li:hover,
+.mobileMenu li:hover {
   color: #b57580;
 }
 
 .active {
   color: #b57580;
   font-weight: 600;
-  position: relative;
 }
 
-.active::after {
-  content: '';
-  position: absolute;
-  bottom: -6px;
-  left: 0;
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  height: 1px;
+  padding-top: 1rem;
+}
+
+.bar {
+  width: 25px;
+  height: 2px;
   background-color: #b57580;
+  transition: all 0.3s ease;
 }
 
-.navImage {
-  width: 200px;
-  height: 208px;
-  object-fit: cover;
-  filter: saturate(0);
-  margin-top: 0;
-  transition: transform 0.4s ease, filter 0.4s ease;
-}
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  .desktopNav {
+    display: none;
+  }
 
-.navImage:hover {
-  transform: scale(1.2);
-  filter: saturate(1);
+  .mobileNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navItems {
+    display: none;
+  }
 }

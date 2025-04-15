@@ -1,24 +1,24 @@
 .wrapper {
-    text-align: center;
-    padding: 8rem 8.4375rem;
-    background-color: #F2DFDF; /* or transparent if overlaid */
-  }
-  
-  .title {
-    font-family: 'Ginger', serif;
-    font-weight: 300;
-    font-size: 2.625rem;
-    letter-spacing: 1px;
-    color: #b57580;
-    margin-bottom: 3rem;
-  }
-  
-  .description {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1rem;
-    line-height: 1.8;
-    max-width: 800px;
-    margin: 0 auto;
-    color: #797979;
-  }
-  
+  text-align: center;
+  padding: clamp(4rem, 10vw, 8rem) clamp(1.5rem, 8vw, 8.4375rem);
+  background-color: #F2DFDF;
+}
+
+.title {
+  font-family: 'Ginger', serif;
+  font-weight: 300;
+  font-size: clamp(2rem, 5vw, 2.625rem); /* Responsive title size */
+  letter-spacing: 1px;
+  color: #b57580;
+  margin-bottom: 3rem;
+}
+
+.description {
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp(0.85rem, 2vw, 1rem);
+  color: #797979;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
