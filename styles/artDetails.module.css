@@ -1,0 +1,122 @@
+
+.backWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    margin-bottom: -2rem;
+  }
+  
+  .backLink {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: #b57580;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  /*  Main Layout */
+  .container {
+    display: flex;
+    gap: 4rem;
+    padding: clamp(4rem, 8vw, 6rem) clamp(2rem, 6vw, 8rem);
+    background-color: #fff;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  /* Image Section */
+  .imageWrapper {
+    flex: 1;
+    min-width: 320px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    object-fit: cover;
+  }
+  
+  /* Details Section */
+  .detailsWrapper {
+    flex: 1;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Info Table */
+  .infoTable {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 2rem;
+  }
+  
+  .infoRow {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ccc;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.95rem;
+    color: #444;
+  }
+  
+  .infoRow span:first-child {
+    text-transform: uppercase;
+    font-family: 'Ginger', serif;
+    color: #222;
+  }
+  
+  .infoRow:last-child {
+    border-bottom: none;
+  }
+  
+  /* Title & Description */
+  .artTitle {
+    font-family: 'Ginger', serif;
+    font-size: 1.75rem;
+    margin: 2rem 0 2em;
+    color: #222;
+    text-transform: uppercase;
+    text-align: center; /* ✅ Center only title */
+  }
+  
+  .artDescription {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.7;
+    max-width: 500px;
+    text-align: center; 
+    margin: 0 auto;      
+  }
+  /* Responsive Layout */
+  @media (max-width: 768px) {
+    .container {
+        min-height: 100vh;
+      }
+  
+    .imageWrapper {
+      order: 1;
+    }
+  
+    .detailsWrapper {
+      order: 2;
+      margin-top: 2rem;
+    }
+  
+    .infoRow {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.25rem;
+    }
+  
+    .artTitle {
+      font-size: 1.4rem;
+    }
+  }
+  
