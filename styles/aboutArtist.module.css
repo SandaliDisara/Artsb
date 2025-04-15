@@ -1,53 +1,56 @@
 .section {
-    background-color: #F2DFDF;
-    padding: 8rem 0 8rem;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .title {
-    font-family: 'Ginger', serif;
-    font-size: 2.625rem;
-    color: #b57580;
-    margin-bottom: 3rem;
-    font-weight: 300;
-  }
-  
-  .description {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1rem;
-    line-height: 1.8;
-    max-width: 800px;
-    margin: 0 auto 4rem;
-    color: #797979;
-  }
-  
-  .imageContainer {
-    position: relative;
-    display: inline-block; /* Ensures container only wraps around image */
-  }
-  
-  .artistImage {
-    width: 430px;
-    height: auto;
-    object-fit: cover;
-    z-index: 2;
-    display: block;
-  }
+  background-color: #F2DFDF;
+  padding: clamp(4rem, 10vw, 8rem) clamp(1.5rem, 8vw, 8.4375rem);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.title {
+  font-family: 'Ginger', serif;
+  font-weight: 300;
+  font-size: clamp(2rem, 5vw, 2.625rem); 
+  letter-spacing: 1px;
+  color: #b57580;
+  margin-bottom: 3rem;
+}
 
-  .fullNameOverlay {
-    position: absolute;
-    bottom: 0; 
-    left: 50%;
-    transform: translateX(-50%);
-    font-family: 'Jedira', serif;
-    font-size: 9.5vw;
-    color: #ffffff;
-    line-height: 1;
-    text-align: center;
-    white-space: nowrap;
-    z-index: 3;
-    pointer-events: none;
-  }
-  
+.description {
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp(0.85rem, 2vw, 1rem);
+  color: #797979;
+  line-height: 1.8;
+  max-width: 750px;
+  margin: 0 auto 4rem;
+  padding: 0 1rem;
+}
+
+.imageContainer {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 430px;
+}
+
+.artistImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  z-index: 2;
+  display: block;
+}
+
+
+.fullNameOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 5%);;
+  font-family: 'Jedira', serif;
+  font-size: clamp(2.5rem, 9.5vw, 9.5vw); 
+  color: #ffffff;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 3;
+  pointer-events: none;
+}

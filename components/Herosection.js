@@ -18,9 +18,9 @@ export default function HeroSection() {
             <div className={styles.imageSet} key={i}>
               <img src="/images/avatar.png" alt="Art 1" />
               <img src="/images/butters.png" alt="Art 2" />
-              <img src="/images/angel.png" alt="Art 3" />
-              <img src="/images/avatar.png" alt="Art 1 repeat" />
-              <img src="/images/butters.png" alt="Art 2 repeat" />
+              <img src="/images/frog.png" alt="Art 3" />
+              <img src="/images/angel.png" alt="Art 4" />
+              {/* <img src="/images/avatar.png" alt="Art 1 repeat" /> */}
             </div>
           ))}
         </div>
