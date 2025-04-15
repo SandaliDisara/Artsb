@@ -1,12 +1,24 @@
 .nav {
-  display: flex;
-  justify-content: center; /* Center nav items horizontally */
-  align-items: center;
-  padding: 2rem 0;
   background-color: white;
+  padding: 4rem 0 0 0;
+  position: relative;
+  z-index: 10;
 }
 
-.navItems {
+/* Desktop nav visible by default */
+.desktopNav {
+  display: flex;
+  justify-content: center;
+}
+
+/* Hide mobile nav by default */
+.mobileNav {
+  display: none;
+}
+
+/* Nav items (shared styles) */
+.navItems,
+.mobileMenu {
   list-style: none;
   display: flex;
   gap: 3rem;
@@ -16,18 +28,65 @@
   font-size: 0.9rem;
   letter-spacing: 1px;
   color: #333;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
 }
 
-.navItems li {
+.mobileMenu {
+  flex-direction: column;
+  background-color: white;
+  padding: 1rem 0;
+  gap: 1.5rem;
+}
+
+.navItems li,
+.mobileMenu li {
   cursor: pointer;
   transition: color 0.3s ease;
 }
 
-.navItems li:hover {
+.navItems li:hover,
+.mobileMenu li:hover {
   color: #b57580;
 }
 
 .active {
   color: #b57580;
   font-weight: 600;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 1rem;
+}
+
+.bar {
+  width: 25px;
+  height: 2px;
+  background-color: #b57580;
+  transition: all 0.3s ease;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  .desktopNav {
+    display: none;
+  }
+
+  .mobileNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navItems {
+    display: none;
+  }
 }
