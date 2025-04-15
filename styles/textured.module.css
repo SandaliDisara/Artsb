@@ -7,7 +7,7 @@
 .title {
   font-family: 'Ginger', serif;
   font-weight: 300;
-  font-size: clamp(2rem, 5vw, 2.625rem); /* Responsive title size */
+  font-size: clamp(2rem, 5vw, 2.625rem); 
   letter-spacing: 1px;
   color: #b57580;
   margin-bottom: 3rem;
@@ -18,7 +18,7 @@
   font-size: clamp(0.85rem, 2vw, 1rem);
   color: #797979;
   line-height: 1.8;
-  max-width: 700px;
-  margin: 0 auto;
+  max-width: 750px;
+  margin: 0 auto 4rem;
   padding: 0 1rem;
 }
