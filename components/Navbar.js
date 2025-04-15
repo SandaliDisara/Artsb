@@ -9,7 +9,6 @@ export default function Navbar() {
         <li>ABOUT ARTIST</li>
         <li>CONTACT</li>
       </ul>
-      <img src="/images/frog.png" alt="Frog Art" className={styles.navImage} />
     </nav>
   );
 }
