@@ -1,14 +1,48 @@
+import { useEffect, useRef } from 'react';
 import styles from '@/styles/hero.module.css';
 
 export default function HeroSection() {
+  const cursorRef = useRef(null);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const cursor = cursorRef.current;
+    const section = sectionRef.current;
+
+    const moveCursor = (e) => {
+      if (cursor) {
+        cursor.style.left = `${e.clientX}px`;
+        cursor.style.top = `${e.clientY}px`;
+      }
+    };
+
+    const showCursor = () => cursor && (cursor.style.opacity = '1');
+    const hideCursor = () => cursor && (cursor.style.opacity = '0');
+
+    if (section) {
+      section.addEventListener('mousemove', moveCursor);
+      section.addEventListener('mouseenter', showCursor);
+      section.addEventListener('mouseleave', hideCursor);
+    }
+
+    return () => {
+      if (section) {
+        section.removeEventListener('mousemove', moveCursor);
+        section.removeEventListener('mouseenter', showCursor);
+        section.removeEventListener('mouseleave', hideCursor);
+      }
+    };
+  }, []);
+
   return (
-    <section className={styles.hero}>
+    <section className={styles.hero} ref={sectionRef}>
       <div className={styles.logoBlock}>
         <h1 className={styles.logo}>ARTSB</h1>
       </div>
+
       <div className={styles.textBlock}>
         <p className={styles.description}>
-        A Sri Lankan artist who blurs the lines between reality and dreamscapes, weaving emotion, and surrealism into every brushstroke.
+          A Sri Lankan artist who blurs the lines between reality and dreamscapes, weaving emotion, and surrealism into every brushstroke.
         </p>
       </div>
 
@@ -20,11 +54,13 @@ export default function HeroSection() {
               <img src="/images/butters.png" alt="Art 2" />
               <img src="/images/frog.png" alt="Art 3" />
               <img src="/images/angel.png" alt="Art 4" />
-              {/* <img src="/images/avatar.png" alt="Art 1 repeat" /> */}
             </div>
           ))}
         </div>
       </div>
+
+      {/* Scroll Cursor (hidden by default) */}
+      <div className={styles.scrollCursor} ref={cursorRef}>Scroll</div>
     </section>
   );
 }

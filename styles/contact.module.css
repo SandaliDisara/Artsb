@@ -1,44 +1,46 @@
 .section {
-    padding: 8rem 8.4375rem;
-    background-color: #fff;
-    text-align: center;
-  }
-  
-  .title {
-    font-family: 'Ginger', serif;
-    font-weight: 300;
-    font-size: 2.625rem;
-    color: #b57580;
-    margin-bottom: 5rem;
-  }
-  
-  .contactTable {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 0;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  .row {
-    height: 5.5rem; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  .row:last-child {
-    border-bottom: none;
-  }
-  
-  .row p {
-    margin: 0;
-    font-family: 'Ginger', serif;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    color: #8D8D8D;
-  }
-  
+  padding: clamp(4rem, 8vw, 8rem) clamp(1.5rem, 8vw, 8.4375rem); 
+  background-color: #fff;
+  text-align: center;
+}
+
+.title {
+  font-family: 'Ginger', serif;
+  font-weight: 300;
+  font-size: clamp(2rem, 5vw, 2.625rem); 
+  color: #b57580;
+  margin-bottom: 5rem;
+}
+
+.contactTable {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.row {
+  height: clamp(4rem, 7vw, 5.5rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #ccc;
+  padding: 0 1rem;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.row p {
+  margin: 0;
+  font-family: 'Ginger', serif;
+  font-size: clamp(1.1rem, 3.5vw, 1.5rem); 
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #8D8D8D;
+  text-align: center;
+  word-break: break-word;
+}

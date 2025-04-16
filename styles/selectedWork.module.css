@@ -28,8 +28,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
-  padding: 0 clamp(1.5rem, 5vw, 8.4375rem); 
+  gap: 3rem;
+  padding: 0 clamp(0.5rem, 3vw, 4rem); 
   z-index: 2;
   position: relative;
 }
