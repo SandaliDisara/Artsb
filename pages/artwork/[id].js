@@ -31,16 +31,18 @@ export default function ArtDetails() {
         </div>
 
         <div className={styles.detailsWrapper}>
-          <div className={styles.infoTable}>
-            <div className={styles.infoRow}><span>MEDIUM</span><span>{art.medium}</span></div>
-            <div className={styles.infoRow}><span>SIZE</span><span>{art.size}</span></div>
-            <div className={styles.infoRow}><span>COMPLETED</span><span>{art.completed}</span></div>
-            <div className={styles.infoRow}><span>STATUS</span><span>{art.status}</span></div>
-          </div>
+  <div className={styles.topText}>
+    <h2 className={styles.artTitle}>{art.title}</h2>
+    <p className={styles.artDescription}>{art.description}</p>
+  </div>
 
-          <h2 className={styles.artTitle}>{art.title}</h2>
-          <p className={styles.artDescription}>{art.description}</p>
-        </div>
+  <div className={styles.infoTable}>
+    <div className={styles.infoRow}><span>MEDIUM</span><span>{art.medium}</span></div>
+    <div className={styles.infoRow}><span>SIZE</span><span>{art.size}</span></div>
+    <div className={styles.infoRow}><span>COMPLETED</span><span>{art.completed}</span></div>
+    <div className={styles.infoRow}><span>STATUS</span><span>{art.status}</span></div>
+  </div>
+</div>
       </section>
     </>
   );

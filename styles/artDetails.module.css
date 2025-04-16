@@ -1,122 +1,160 @@
-
+/* Back Home Link */
 .backWrapper {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding-top: 2rem;
-    margin-bottom: -2rem;
-  }
-  
-  .backLink {
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    color: #b57580;
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-  }
-  
-  /*  Main Layout */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: clamp(1rem, 4vw, 2.5rem);
+  margin-bottom: -2rem;
+}
+
+.backLink {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #b57580;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  margin: 2rem;
+}
+
+/* Main Container */
+.container {
+  display: flex;
+  align-items: stretch; /* Stretch both columns to equal height */
+  justify-content: center;
+  height: 90vh;
+  padding: clamp(1rem, 4vw, 3rem) clamp(1rem, 5vw, 4rem);
+  background-color: #fff;
+  box-sizing: border-box;
+  gap: 4rem;
+  overflow: hidden;
+}
+
+/* Image Side */
+.imageWrapper {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.image {
+  width: auto;
+  height: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Details Side */
+.detailsWrapper {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  height: 100%;
+  padding: 2rem 2rem 2rem 0;
+  box-sizing: border-box;
+}
+
+.topText {
+  text-align: center;
+}
+
+/* Title & Description */
+.artTitle {
+  font-family: 'Ginger', serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #6D6D6D;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.artDescription {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.7;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Info Table */
+.infoTable {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.infoRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0; /* Increased vertical spacing */
+  border-bottom: 1px solid #ccc;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.95rem;
+  color: #444;
+}
+.infoRow span:first-child {
+  text-transform: uppercase;
+  font-family: 'Ginger', serif;
+  color: #222;
+}
+
+.infoRow:last-child {
+  border-bottom: none;
+}
+
+
+
+
+
+/* Mobile View */
+@media (max-width: 768px) {
   .container {
-    display: flex;
-    gap: 4rem;
-    padding: clamp(4rem, 8vw, 6rem) clamp(2rem, 6vw, 8rem);
-    background-color: #fff;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 1.5rem;
+    gap: 2rem;
   }
-  
-  /* Image Section */
+
   .imageWrapper {
-    flex: 1;
-    min-width: 320px;
-    display: flex;
-    justify-content: center;
+    width: 100%;
+    height: auto;
+    order: 1;
   }
-  
+
   .image {
     width: 100%;
     height: auto;
-    max-width: 500px;
-    object-fit: cover;
+    max-width: 100%;
   }
-  
-  /* Details Section */
+
   .detailsWrapper {
-    flex: 1;
-    min-width: 320px;
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    order: 2;
+    padding: 0;
+    align-items: center;
+    justify-content: flex-start;
   }
-  
-  /* Info Table */
+
   .infoTable {
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 2rem;
+    width: 100%; 
+    max-width: 700px;
+    margin: 3rem auto;
   }
-  
+
   .infoRow {
-    display: flex;
+    flex-direction: row; /* ✅ Put label and value side by side */
+    align-items: center;
     justify-content: space-between;
-    padding: 1rem 0;
-    border-bottom: 1px solid #ccc;
-    font-family: 'Raleway', sans-serif;
-    font-size: 0.95rem;
-    color: #444;
+    gap: 0; /* Remove vertical gap */
+    width: 100%;
+    padding: 1.2rem 0; /* Optional: slightly reduced spacing for mobile */
   }
-  
-  .infoRow span:first-child {
-    text-transform: uppercase;
-    font-family: 'Ginger', serif;
-    color: #222;
-  }
-  
-  .infoRow:last-child {
-    border-bottom: none;
-  }
-  
-  /* Title & Description */
+
   .artTitle {
-    font-family: 'Ginger', serif;
-    font-size: 1.75rem;
-    margin: 2rem 0 2em;
-    color: #222;
-    text-transform: uppercase;
-    text-align: center; /* ✅ Center only title */
+    font-size: 1.4rem;
   }
-  
-  .artDescription {
-    font-family: 'Raleway', sans-serif;
-    font-size: 0.95rem;
-    color: #555;
-    line-height: 1.7;
-    max-width: 500px;
-    text-align: center; 
-    margin: 0 auto;      
-  }
-  /* Responsive Layout */
-  @media (max-width: 768px) {
-    .container {
-        min-height: 100vh;
-      }
-  
-    .imageWrapper {
-      order: 1;
-    }
-  
-    .detailsWrapper {
-      order: 2;
-      margin-top: 2rem;
-    }
-  
-    .infoRow {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 0.25rem;
-    }
-  
-    .artTitle {
-      font-size: 1.4rem;
-    }
-  }
-  
+}
+
