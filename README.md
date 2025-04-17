@@ -46,6 +46,10 @@ A personalized portfolio website built for Sri Lankan artist **Bimasha Vidanagam
 
 ---
 
+- **Design Case Study**: [Behance](https://www.behance.net/gallery/223843021/ARTSB-Portfolio-Web-Design)
+
+---
+
 ## Credits
 
 - **Design & Development**: Sandali Dissanayake  
