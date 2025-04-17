@@ -7,7 +7,7 @@ export default function ContactSection() {
       <div className={styles.contactTable}>
         <div className={styles.row}><p>ARTSBLANKA@GMAIL.COM</p></div>
         <div className={styles.row}><p>+94 725 412 886</p></div>
-        <div className={styles.row}><p>TIKTOK - @1THINKIPAINT</p></div>
+        <div className={styles.row}><p>TIKTOK - @ITHINKIPAINT</p></div>
         <div className={styles.row}><p>INSTAGRAM - @ARTSBLK</p></div>
       </div>
     </section>

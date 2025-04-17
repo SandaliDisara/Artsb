@@ -16,10 +16,12 @@ export default function SelectedWork() {
         <Link href="/artwork/the-night-she">
           <img src="/images/avatar.png" alt="Art 1" />
         </Link>
-        <Link href="/artwork/butters">
+        <Link href="/artwork/day-dream">
           <img src="/images/butters.png" alt="Art 2" />
         </Link>
+        <Link href="/artwork/iam-free">
         <img src="/images/angel.png" alt="Art 3" />
+        </Link>
         <img src="/images/frog.png" alt="Art 4" />
       </div>
 

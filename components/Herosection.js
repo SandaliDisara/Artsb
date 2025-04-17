@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import styles from '@/styles/hero.module.css';
+import Link from 'next/link';
 
 export default function HeroSection() {
   const cursorRef = useRef(null);
@@ -50,10 +51,19 @@ export default function HeroSection() {
         <div className={styles.scrollTrack}>
           {[...Array(2)].map((_, i) => (
             <div className={styles.imageSet} key={i}>
+              <Link href="/artwork/the-night-she">
               <img src="/images/avatar.png" alt="Art 1" />
+              </Link>
+              <Link href="/artwork/day-dream">
               <img src="/images/butters.png" alt="Art 2" />
+              </Link>
+            
               <img src="/images/frog.png" alt="Art 3" />
+              
+              <Link href="/artwork/iam-free">
               <img src="/images/angel.png" alt="Art 4" />
+              </Link>
+             
             </div>
           ))}
         </div>
