@@ -1,40 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# ARTB – Portfolio Website for Bimasha Vidanagama 
 
-## Getting Started
+A personalized portfolio website built for Sri Lankan artist **Bimasha Vidanagama**, showcasing her bold and expressive artworks in a minimal, immersive digital space.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## About the Project
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**ARTB** is designed to reflect the artist’s unique identity—merging thoughtful UX, minimalist UI, and clean development practices. The site puts the spotlight on her visual work, enhancing the viewer experience while staying true to her creative voice.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+---
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Project Workflow
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+### 1. Client Discovery & Requirements
+- Met with the artist to understand her brand and creative goals  
+- Gathered requirements for essential features: portfolio gallery, artist bio, and contact  
+- Defined a visual mood: raw, symbolic, and emotionally evocative
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 2. UI/UX Design (Figma)
+- Created wireframes and high-fidelity designs in **Figma**  
+- Focused on visual hierarchy, white space, and artistic flow  
+- Selected fonts and colors to match the artist’s tone  
+- Responsive layouts optimized for all screen sizes
 
-## Learn More
+### 3. Development (Next.js)
+- Built using **Next.js**   
+- Styled using **CSS Modules**  
+- Integrated smooth transitions and responsive elements 
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+## Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Framework**: [Next.js](https://nextjs.org)  
+- **Styling**: CSS Modules  
+- **Design**: Figma  
+- **Fonts**: Raleway + Custom Installed Font  
+- **Deployment**: Vercel
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📷 Live Preview
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+👉 [Visit the Live Website](#) *(https://artsb-mu.vercel.app/)*
+
+---
+
+## Credits
+
+- **Design & Development**: Sandali Dissanayake  
+- **Artwork**: [Bimasha Vidanagama (@arts.b)](https://www.instagram.com/artsb.lk/)
+
+
