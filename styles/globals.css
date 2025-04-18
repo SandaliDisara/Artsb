@@ -18,6 +18,11 @@
   font-style: normal;
 }
 
+/* Global Scroll Behavior */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Global Styles */
 body {
   font-family: 'Raleway', sans-serif;
