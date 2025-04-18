@@ -9,10 +9,10 @@ export default function Navbar() {
     <nav className={styles.nav}>
       <div className={styles.desktopNav}>
         <ul className={styles.navItems}>
-          <li className={styles.active}>HOME</li>
-          <li>SELECTED WORK</li>
-          <li>ABOUT ARTIST</li>
-          <li>CONTACT</li>
+          <li className={styles.active}><a href="#home">HOME</a></li>
+          <li><a href="#selected">SELECTED WOR</a>K</li>
+          <li><a href="#about">ABOUT ARTIST</a></li>
+          <li><a href="#contact">CONTACT</a></li>
         </ul>
       </div>
 

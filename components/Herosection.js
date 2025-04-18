@@ -36,7 +36,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className={styles.hero} ref={sectionRef}>
+    <section className={styles.hero} ref={sectionRef} id="home">
       <div className={styles.logoBlock}>
         <h1 className={styles.logo}>ARTSB</h1>
       </div>

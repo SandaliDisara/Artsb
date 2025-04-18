@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function SelectedWork() {
   return (
-    <section className={styles.section}>
+    <section className={styles.section}  id="selected">
       <h2 className={styles.title}>SELECTED WORK</h2>
       <p className={styles.description}>
         A curated collection of the artist’s most compelling pieces,

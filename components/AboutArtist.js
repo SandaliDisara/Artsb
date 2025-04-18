@@ -2,7 +2,7 @@ import styles from '@/styles/aboutArtist.module.css';
 
 export default function AboutArtist() {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="about">
     <h2 className={styles.title}>ABOUT ARTIST</h2>
     <p className={styles.description}>
     I am a Sri Lankan artist, gradually carving my space in the creative industry
