@@ -42,7 +42,7 @@ A personalized portfolio website built for Sri Lankan artist **Bimasha Vidanagam
 
 ## 📷 Live Preview
 
-👉 [Visit the Live Website](https://artsb-mu.vercel.app/)
+👉 [Visit the Live Website](https://www.artsb.art/)
 
 ---
 
