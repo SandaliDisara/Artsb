@@ -10,7 +10,7 @@ export default function Navbar() {
       <div className={styles.desktopNav}>
         <ul className={styles.navItems}>
           <li className={styles.active}><a href="#home">HOME</a></li>
-          <li><a href="#selected">SELECTED WOR</a>K</li>
+          <li><a href="#selected">SELECTED WORK</a></li>
           <li><a href="#about">ABOUT ARTIST</a></li>
           <li><a href="#contact">CONTACT</a></li>
         </ul>
@@ -23,14 +23,12 @@ export default function Navbar() {
           <span className={styles.bar}></span>
         </div>
 
-        {menuOpen && (
-          <ul className={styles.mobileMenu}>
-            <li>HOME</li>
-            <li>SELECTED WORK</li>
-            <li>ABOUT ARTIST</li>
-            <li>CONTACT</li>
-          </ul>
-        )}
+        <ul className={`${styles.mobileMenu} ${menuOpen ? styles.open : ''}`}>
+          <li><a href="#home" onClick={toggleMenu}>HOME</a></li>
+          <li><a href="#selected" onClick={toggleMenu}>SELECTED WORK</a></li>
+          <li><a href="#about" onClick={toggleMenu}>ABOUT ARTIST</a></li>
+          <li><a href="#contact" onClick={toggleMenu}>CONTACT</a></li>
+        </ul>
       </div>
     </nav>
   );
