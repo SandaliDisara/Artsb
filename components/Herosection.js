@@ -52,16 +52,18 @@ export default function HeroSection() {
           {[...Array(2)].map((_, i) => (
             <div className={styles.imageSet} key={i}>
               <Link href="/artwork/the-night-she">
-              <img src="/images/avatar.png" alt="Art 1" />
+              <img src="/images/avatar.webp" alt="Art 1" />
               </Link>
               <Link href="/artwork/day-dream">
-              <img src="/images/butters.png" alt="Art 2" />
+              <img src="/images/butters.webp" alt="Art 2" />
               </Link>
             
-              <img src="/images/frog.png" alt="Art 3" />
+              <Link href="/artwork/frog-peace">
+              <img src="/images/frog.webp" alt="Art 3" />
+              </Link>
               
               <Link href="/artwork/iam-free">
-              <img src="/images/angel.png" alt="Art 4" />
+              <img src="/images/angel.webp" alt="Art 4" />
               </Link>
              
             </div>
