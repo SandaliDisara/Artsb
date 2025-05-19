@@ -17,7 +17,7 @@ export default function AboutArtist() {
     </p>
   
     <div className={styles.imageContainer}>
-  <img src="/images/bimasha.png" alt="Artist" className={styles.artistImage} />
+  <img src="/images/bimasha.webp" alt="Artist" className={styles.artistImage} />
   <div className={styles.fullNameOverlay}>
     BIMASHA VIDANAGAMA
   </div>
